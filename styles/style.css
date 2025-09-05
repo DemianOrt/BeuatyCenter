@@ -1,24 +1,50 @@
+/* ============================================= */
+/* ============= ESTILOS GENERALES ============== */
+/* ============================================= */
+
+/* Define la tipografía y el color de fondo base para toda la página */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #fff8f5;
 }
+
+/* Define la tipografía para los títulos (h1, h2, h3) */
 h1,
 h2,
 h3 {
   font-family: "Playfair Display", serif;
 }
+
+/* ============================================= */
+/* ============ SECCIÓN DE BIENVENIDA ============ */
+/* ============================================= */
+
+/* Estilo para el fondo de la sección principal (Hero) */
 .hero-bg {
+  /* Imagen de fondo de ejemplo. Reemplazar con una imagen real */
   background-image: url("https://placehold.co/1200x800/EAD2D2/333333?text=Beauty+Center");
   background-size: cover;
   background-position: center;
 }
+
+/* ============================================= */
+/* ============ TARJETAS DE SERVICIO ============= */
+/* ============================================= */
+
+/* Define una altura fija y cómo se ajusta la imagen dentro de las tarjetas */
 .card-img {
   height: 200px;
   width: 100%;
-  object-fit: cover;
+  object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
 }
+
+/* ============================================= */
+/* ============ SECCIÓN DE RESULTADOS ============ */
+/* ============================================= */
+
+/* Estilo para las miniaturas de video de TikTok */
 .video-thumbnail::after {
-  content: "▶";
+  content: "▶"; /* Símbolo de "Play" */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -33,16 +59,21 @@ h3 {
   align-items: center;
   justify-content: center;
   line-height: 80px;
-  opacity: 0;
+  opacity: 0; /* Oculto por defecto */
   transition: opacity 0.3s ease;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
+
+/* Muestra el ícono de "Play" cuando el cursor está sobre la miniatura */
 .video-thumbnail:hover::after {
   opacity: 1;
 }
+
+/* Efecto de zoom suave en la imagen de la miniatura al pasar el cursor */
 .video-thumbnail img {
   transition: transform 0.3s ease;
 }
+
 .video-thumbnail:hover img {
   transform: scale(1.05);
 }
