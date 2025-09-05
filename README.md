@@ -68,3 +68,5 @@ Para cambiar la imagen de la miniatura, reemplaza el enlace en la etiqueta <img>
 Este sitio web fue diseñado y desarrollado como una solución digital a medida para "Beauty Center By Karen Arellano".
 
 Fecha de finalización: 4 de Septiembre de 2025.
+
+https://demianort.github.io/BeuatyCenter
