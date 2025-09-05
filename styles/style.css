@@ -1,1 +1,48 @@
-
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff8f5;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+.hero-bg {
+  background-image: url("https://placehold.co/1200x800/EAD2D2/333333?text=Beauty+Center");
+  background-size: cover;
+  background-position: center;
+}
+.card-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+.video-thumbnail::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 80px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.video-thumbnail:hover::after {
+  opacity: 1;
+}
+.video-thumbnail img {
+  transition: transform 0.3s ease;
+}
+.video-thumbnail:hover img {
+  transform: scale(1.05);
+}
