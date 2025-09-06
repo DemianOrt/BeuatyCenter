@@ -1,11 +1,11 @@
-#Página Web para "Beauty Center By Karen Arellano"
+Página Web para "Beauty Center By Karen Arellano"
 1. Introducción
-Este proyecto consiste en el diseño y desarrollo de una página web de una sola vista (Single Page Application - SPA) para el salón de belleza "Beauty Center By Karen Arellano". El objetivo principal es presentar de manera profesional y atractiva los servicios, cursos y resultados del salón, facilitando al mismo tiempo el contacto directo de los clientes para agendar citas o solicitar información.
+Este proyecto consiste en el diseño y desarrollo de una página web de una sola vista para el salón de belleza "Beauty Center By Karen Arellano". El objetivo principal es presentar de manera profesional y atractiva los servicios, cursos y resultados del salón, facilitando al mismo tiempo el contacto directo de los clientes para agendar citas o solicitar información.
 
-La página fue construida siguiendo un enfoque moderno, priorizando la experiencia de usuario, la responsividad en todos los dispositivos (móviles, tabletas y computadoras de escritorio) y una estética limpia y elegante que refleja la identidad de la marca.
+La página fue construida siguiendo un enfoque moderno, priorizando la experiencia de usuario, la responsividad en todos los dispositivos y una estética limpia y elegante que refleja la identidad de la marca.
 
 2. Características Principales
-Diseño de Una Sola Página (SPA): Toda la información se presenta en una única página con desplazamiento vertical, lo que permite una navegación fluida e intuitiva.
+Diseño de Una Sola Página: Toda la información se presenta en una única página con desplazamiento vertical, lo que permite una navegación fluida e intuitiva.
 
 Totalmente Responsiva: El diseño se adapta perfectamente a cualquier tamaño de pantalla, garantizando una visualización óptima en todos los dispositivos.
 
@@ -67,6 +67,6 @@ Para cambiar la imagen de la miniatura, reemplaza el enlace en la etiqueta <img>
 6. Créditos
 Este sitio web fue diseñado y desarrollado como una solución digital a medida para "Beauty Center By Karen Arellano".
 
-Fecha de finalización: 4 de Septiembre de 2025.
+Fecha de finalización: Aún por definir.
 
 https://demianort.github.io/BeuatyCenter
