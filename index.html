@@ -1,390 +1,189 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/favicon.svg" type="image/svg" />
-    <title>Beuaty Center by KarenArellano</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Center By Karen Arellano - Expertos en Belleza</title>
 
     <!-- Tailwind CSS (Framework de estilos) -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Fonts (Tipografías) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Hoja de Estilos Personalizada -->
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body class="text-gray-800">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-700">
+
     <!-- ============================================= -->
     <!-- ============== HEADER / NAV BAR ============== -->
     <!-- ============================================= -->
-    <header
-      id="header"
-      class="bg-[#FFF8F5]/90 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-md transition-all duration-300"
-    >
-      <div
-        class="container mx-auto px-6 py-4 flex justify-between items-center"
-      >
-        <a href="#" class="text-2xl font-bold tracking-wider text-rose-900"
-          >Beauty Center</a
-        >
-        <nav class="hidden md:flex space-x-8">
-          <a
-            href="#servicios"
-            class="text-gray-600 hover:text-rose-800 transition-colors"
-            >Servicios</a
-          >
-          <a
-            href="#cursos"
-            class="text-gray-600 hover:text-rose-800 transition-colors"
-            >Cursos</a
-          >
-          <a
-            href="#resultados"
-            class="text-gray-600 hover:text-rose-800 transition-colors"
-            >Resultados</a
-          >
-          <a
-            href="#contacto"
-            class="text-gray-600 hover:text-rose-800 transition-colors"
-            >Contacto</a
-          >
-        </nav>
-        <button id="mobile-menu-button" class="md:hidden text-rose-900">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            />
-          </svg>
-        </button>
-      </div>
-      <!-- Menú para Móviles -->
-      <div id="mobile-menu" class="hidden md:hidden bg-[#FFF8F5] px-6 pb-4">
-        <a
-          href="#servicios"
-          class="block py-2 text-gray-600 hover:text-rose-800"
-          >Servicios</a
-        >
-        <a href="#cursos" class="block py-2 text-gray-600 hover:text-rose-800"
-          >Cursos</a
-        >
-        <a
-          href="#resultados"
-          class="block py-2 text-gray-600 hover:text-rose-800"
-          >Resultados</a
-        >
-        <a href="#contacto" class="block py-2 text-gray-600 hover:text-rose-800"
-          >Contacto</a
-        >
-      </div>
+    <header id="header" class="bg-cream-100/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold tracking-wider text-charcoal">Beauty Center</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#servicios" class="nav-link">Servicios</a>
+                <a href="#cursos" class="nav-link">Cursos</a>
+                <a href="#resultados" class="nav-link">Resultados</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-charcoal">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Menú para Móviles -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream-100 px-6 pb-4">
+            <a href="#servicios" class="block py-2 nav-link-mobile">Servicios</a>
+            <a href="#cursos" class="block py-2 nav-link-mobile">Cursos</a>
+            <a href="#resultados" class="block py-2 nav-link-mobile">Resultados</a>
+            <a href="#contacto" class="block py-2 nav-link-mobile">Contacto</a>
+        </div>
     </header>
 
     <main>
-      <!-- ============================================= -->
-      <!-- ============ SECCIÓN DE BIENVENIDA ============ -->
-      <!-- ============================================= -->
-      <section
-        id="hero"
-        class="hero-bg h-screen flex items-center justify-center text-white"
-      >
-        <div
-          class="bg-black/50 p-8 md:p-12 rounded-lg text-center backdrop-blur-sm"
-        >
-          <h1 class="text-4xl md:text-6xl font-bold mb-4">
-            Beauty Center By Karen Arellano
-          </h1>
-          <p class="text-lg md:text-xl mb-8 max-w-2xl">
-            Especialistas en alaciado, cejas, faciales y formación profesional.
-          </p>
-          <a
-            href="https://wa.me/5215567431006?text=Hola!%20Me%20gustaría%20agendar%20una%20cita."
-            target="_blank"
-            class="bg-rose-500 hover:bg-rose-600 text-white font-bold py-3 px-6 md:px-8 rounded-full text-base md:text-lg transition-transform transform hover:scale-105 inline-block"
-          >
-            Agendar Cita por WhatsApp
-          </a>
-        </div>
-      </section>
+        <!-- ============================================= -->
+        <!-- ============ SECCIÓN DE BIENVENIDA ============ -->
+        <!-- ============================================= -->
+        <section id="hero" class="hero-bg h-screen flex items-center justify-center text-white">
+            <div class="bg-black/40 p-8 md:p-14 rounded-lg text-center backdrop-blur-sm max-w-4xl mx-4">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Beauty Center By Karen Arellano</h1>
+                <p class="text-lg md:text-xl mb-8">Especialistas en alaciado, cejas, faciales y formación profesional.</p>
+                <a href="https://wa.me/5215567431006?text=Hola!%20Me%20gustaría%20agendar%20una%20cita." target="_blank" class="btn btn-primary">
+                    Agendar Cita por WhatsApp
+                </a>
+            </div>
+        </section>
 
-      <!-- ============================================= -->
-      <!-- ============= SECCIÓN SERVICIOS ============== -->
-      <!-- ============================================= -->
-      <section id="servicios" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-rose-900">Nuestros Servicios</h2>
-            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-              Descubre cómo podemos realzar tu belleza con tratamientos
-              especializados y resultados que te encantarán.
-            </p>
-          </div>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
-            <!-- Tarjeta de Servicio: Alaciado -->
-            <div
-              class="bg-[#FFF8F5] rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
-            >
-              <img
-                src="https://placehold.co/600x400/D4AFA7/FFFFFF?text=Alaciado"
-                alt="Alaciado Permanente"
-                class="card-img"
-              />
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-rose-800 mb-3">
-                  Alaciado Permanente
-                </h3>
-                <p class="text-gray-700 mb-4">
-                  Olvídate del frizz y luce un cabello liso, sedoso y manejable.
-                  Nuestro tratamiento nutre tu cabello mientras lo alisa,
-                  garantizando resultados duraderos.
-                </p>
-                <div class="text-xl font-semibold text-rose-900">
-                  Desde $1,800 MXN
+        <!-- ============================================= -->
+        <!-- ============= SECCIÓN SERVICIOS ============== -->
+        <!-- ============================================= -->
+        <section id="servicios" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Nuestros Servicios Premium</h2>
+                    <p class="section-subtitle">Realza tu belleza con tratamientos de vanguardia y resultados excepcionales.</p>
                 </div>
-              </div>
-            </div>
-            <!-- Tarjeta de Servicio: Cejas -->
-            <div
-              class="bg-[#FFF8F5] rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
-            >
-              <img
-                src="https://placehold.co/600x400/C3B1E1/FFFFFF?text=Cejas"
-                alt="Laminado de Cejas"
-                class="card-img"
-              />
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-rose-800 mb-3">
-                  Laminado de Cejas y Lifting
-                </h3>
-                <p class="text-gray-700 mb-4">
-                  Define tu mirada con cejas perfectas. El laminado estiliza y
-                  fija el vello, logrando un efecto de mayor densidad y un arco
-                  impecable.
-                </p>
-                <div class="text-xl font-semibold text-rose-900">
-                  Desde $750 MXN
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Tarjeta de Servicio: Alaciado Permanente -->
+                    <div class="service-card">
+                        <img src="https://scontent.fmex10-4.fna.fbcdn.net/v/t39.30808-6/481903838_680187754358548_811296561179344959_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=M4F0piMntkIQ7kNvwFv9jD-&_nc_oc=AdnL2VXRVBwaqhZainGF_PWmYHO9tDw60MEnYeLi63dU9P_kYMIWuBjDDPBWT-BIfLil9id3LPFh0ugmuCMkd39A&_nc_zt=23&_nc_ht=scontent.fmex10-4.fna&_nc_gid=fOnz7_FeKzFLuO_LCZZxmg&oh=00_AfZ7O8nC_RWWAND2ELJAcIYlu-fbB0EC1HAVW3BllvY71Q&oe=68C76BDE" alt="Alaciado Permanente" class="card-img">
+                        <div class="p-8">
+                            <h3 class="card-title">Alaciado Permanente</h3>
+                            <p class="card-description">Luce un cabello liso, sedoso y libre de frizz. Un tratamiento que nutre y protege tu cabello, garantizando resultados duraderos.</p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de Servicio: Laminado de Cejas -->
+                    <div class="service-card">
+                        <img src="https://placehold.co/600x400/EAD2D2/4F4F4F?text=Laminado+de+Cejas" alt="Laminado de Cejas" class="card-img" onerror="this.onerror=null;this.src='images/cejas.webp';">
+                        <div class="p-8">
+                            <h3 class="card-title">Laminado de Cejas y Lifting</h3>
+                            <p class="card-description">Define y enmarca tu mirada con cejas impecables. El laminado estiliza y fija el vello para un efecto de mayor densidad y perfección.</p>
+                        </div>
+                    </div>
+                    <!-- Tarjeta de Servicio: Alaciado Japonés -->
+                    <div class="service-card">
+                        <img src="https://scontent.fmex10-4.fna.fbcdn.net/v/t39.30808-6/528726244_792926089751380_3440488304812934778_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=6s3mICgxBAAQ7kNvwElwldM&_nc_oc=AdkTwMFVMZl3Cf6gWQwiwHEgJTuX2AdJKtnL6RqQ1R4sFTOIIyMQWGTA8CCF9ocGm4XNfi0wRyQXB8sXd_O&_nc_zt=23&_nc_ht=scontent.fmex10-4.fna&_nc_gid=jQmJe21WkrGFlieF2UGZrQ&oh=00_Afbz0fEEvArwRfuGchHSnXYdHFrEfJ5iNS8LvduuR1sPPA&oe=68C76D5F" alt="Alaciado Japonés" class="card-img">
+                        <div class="p-8">
+                            <h3 class="card-title">Alaciado Japonés</h3>
+                            <p class="card-description">La solución definitiva para un liso perfecto y brillante. Una técnica avanzada para transformar permanentemente la textura de tu cabello.</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <!-- Tarjeta de Servicio: Faciales -->
-            <div
-              class="bg-[#FFF8F5] rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300"
-            >
-              <img
-                src="https://placehold.co/600x400/B2D8D8/FFFFFF?text=Faciales"
-                alt="Limpiezas Faciales"
-                class="card-img"
-              />
-              <div class="p-6">
-                <h3 class="text-2xl font-bold text-rose-800 mb-3">
-                  Limpiezas Faciales
-                </h3>
-                <p class="text-gray-700 mb-4">
-                  Renueva tu piel con una limpieza facial profunda. Eliminamos
-                  impurezas y células muertas, dejando tu rostro hidratado y
-                  luminoso.
-                </p>
-                <div class="text-xl font-semibold text-rose-900">
-                  Desde $600 MXN
+        </section>
+
+        <!-- ============================================= -->
+        <!-- ============== SECCIÓN CURSOS =============== -->
+        <!-- ============================================= -->
+        <section id="cursos" class="py-24 bg-cream-100">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Cursos Profesionales</h2>
+                    <p class="section-subtitle">Invierte en tu futuro y emprende tu propio camino en el mundo de la belleza.</p>
                 </div>
-              </div>
+                <div class="max-w-5xl mx-auto bg-white rounded-lg shadow-xl p-8 md:flex items-center gap-10 overflow-hidden">
+                    <img src="https://placehold.co/600x500/D4AFA7/FFFFFF?text=Conviértete+en+una+Experta" alt="Cursos Profesionales de Belleza" class="w-full md:w-1/2 rounded-lg mb-6 md:mb-0">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold text-charcoal mb-4">Formación Personalizada</h3>
+                        <p class="text-gray-600 mb-8">Ofrecemos cursos intensivos en las técnicas más demandadas del mercado. Aprende de la mano de expertas con clases teóricas y práctica real para convertirte en una profesional certificada.</p>
+                        <a href="https://wa.me/5215567431006?text=Hola!%20Me%20interesa%20pedir%20informes%20sobre%20sus%20cursos." target="_blank" class="btn btn-secondary">
+                            Solicitar Información
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- ============================================= -->
-      <!-- ============== SECCIÓN CURSOS =============== -->
-      <!-- ============================================= -->
-      <section id="cursos" class="py-20 bg-[#FFF8F5]">
-        <div class="container mx-auto px-6">
-          <div class="text-center mb-12">
-            <h2 class="text-4xl font-bold text-rose-900">
-              Cursos Profesionales
-            </h2>
-            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-              Conviértete en una profesional de la belleza y emprende tu propio
-              camino con nuestra formación personalizada.
-            </p>
-          </div>
-          <div
-            class="max-w-4xl mx-auto bg-white rounded-lg shadow-xl p-8 md:flex items-center gap-8"
-          >
-            <img
-              src="https://placehold.co/600x400/E6CFC3/FFFFFF?text=Formación"
-              alt="Cursos Profesionales"
-              class="w-full md:w-1/2 rounded-lg mb-6 md:mb-0"
-            />
-            <div>
-              <h3 class="text-3xl font-bold text-rose-800 mb-4">
-                Formación Personalizada
-              </h3>
-              <p class="text-gray-700 mb-6">
-                Ofrecemos cursos intensivos en las técnicas más demandadas:
-                alaciado permanente, diseño de cejas, lifting de pestañas y
-                protocolos faciales. Aprende de la mano de expertas con práctica
-                real.
-              </p>
-              <a
-                href="https://wa.me/5215567431006?text=Hola!%20Me%20interesa%20pedir%20informes%20sobre%20sus%20cursos."
-                target="_blank"
-                class="bg-rose-800 hover:bg-rose-900 text-white font-bold py-3 px-6 rounded-full inline-block transition-transform transform hover:scale-105"
-              >
-                Pedir Informes
-              </a>
+        <!-- ============================================= -->
+        <!-- ============ SECCIÓN RESULTADOS ============= -->
+        <!-- ============================================= -->
+        <section id="resultados" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Resultados Reales en TikTok</h2>
+                <p class="section-subtitle">Una imagen vale más que mil palabras. Mira nuestras transformaciones.</p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-10">
+                    <!-- Video 1 -->
+                    <a href="https://www.tiktok.com/@beautycenterbykaren/video/7543093001204010248" target="_blank" class="video-thumbnail">
+                        <img src="https://placehold.co/400x500/EAD2D2/4F4F4F?text=Cabello+Liso" alt="Video de Alaciado" class="video-img">
+                    </a>
+                    <!-- Video 2 -->
+                    <a href="https://www.tiktok.com/@beautycenterbykaren/photo/7521201615303494930" target="_blank" class="video-thumbnail">
+                        <img src="https://placehold.co/400x500/D4AFA7/4F4F4F?text=Cejas+Perfectas" alt="Video de Cejas" class="video-img">
+                    </a>
+                    <!-- Video 3 -->
+                    <a href="https://www.tiktok.com/@beautycenterbykaren/video/7548473781291977992" target="_blank" class="video-thumbnail">
+                        <img src="https://placehold.co/400x500/EAD2D2/4F4F4F?text=Color+y+Estilo" alt="Video de Tinte de Cabello" class="video-img">
+                    </a>
+                    <!-- Video 4 -->
+                    <a href="https://www.tiktok.com/@beautycenterbykaren/photo/7538674318314654984" target="_blank" class="video-thumbnail">
+                        <img src="https://placehold.co/400x500/D4AFA7/4F4F4F?text=Mirada+Impactante" alt="Video de Pestañas" class="video-img">
+                    </a>
+                </div>
+                <a href="https://www.tiktok.com/@beautycenterbykaren" target="_blank" class="btn btn-dark">
+                    Ver más en TikTok
+                </a>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- ============================================= -->
-      <!-- ============ SECCIÓN RESULTADOS ============= -->
-      <!-- ============================================= -->
-      <section id="resultados" class="py-20 bg-white">
-        <div class="container mx-auto px-6 text-center">
-          <h2 class="text-4xl font-bold text-rose-900">
-            Resultados Reales en TikTok
-          </h2>
-          <p class="text-gray-600 mt-4 mb-8 max-w-2xl mx-auto">
-            ¡No te lo contamos, te lo mostramos! Haz clic en cada video para ver
-            las transformaciones.
-          </p>
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            <!-- Video 1 -->
-            <a
-              href="https://www.tiktok.com/@beautycenterbykaren/video/7391980830491872517"
-              target="_blank"
-              class="video-thumbnail block relative rounded-lg shadow-md overflow-hidden group"
-            >
-              <img
-                src="https://placehold.co/400x400/D4AFA7/FFFFFF?text=Alaciado"
-                alt="Video de Alaciado"
-                class="w-full h-auto object-cover aspect-square"
-              />
-            </a>
-            <!-- Video 2 -->
-            <a
-              href="https://www.tiktok.com/@beautycenterbykaren/video/7389801397022297349"
-              target="_blank"
-              class="video-thumbnail block relative rounded-lg shadow-md overflow-hidden group"
-            >
-              <img
-                src="https://placehold.co/400x400/B2D8D8/FFFFFF?text=Facial"
-                alt="Video de Facial"
-                class="w-full h-auto object-cover aspect-square"
-              />
-            </a>
-            <!-- Video 3 -->
-            <a
-              href="https://www.tiktok.com/@beautycenterbykaren/video/7387532394017361157"
-              target="_blank"
-              class="video-thumbnail block relative rounded-lg shadow-md overflow-hidden group"
-            >
-              <img
-                src="https://placehold.co/400x400/C3B1E1/FFFFFF?text=Cejas"
-                alt="Video de Cejas"
-                class="w-full h-auto object-cover aspect-square"
-              />
-            </a>
-            <!-- Video 4 -->
-            <a
-              href="https://www.tiktok.com/@beautycenterbykaren/video/7382216503943318789"
-              target="_blank"
-              class="video-thumbnail block relative rounded-lg shadow-md overflow-hidden group"
-            >
-              <img
-                src="https://placehold.co/400x400/E6CFC3/FFFFFF?text=Cabello"
-                alt="Video de Cabello"
-                class="w-full h-auto object-cover aspect-square"
-              />
-            </a>
-          </div>
-          <a
-            href="https://www.tiktok.com/@beautycenterbykaren"
-            target="_blank"
-            class="bg-gray-900 hover:bg-black text-white font-bold py-3 px-6 md:px-8 rounded-full text-base md:text-lg transition-transform transform hover:scale-105 inline-flex items-center gap-2"
-          >
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path
-                d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-2.43.05-4.84-.94-6.37-2.96-2.29-3.05-2.5-6.87-1.71-9.98.3-1.15.7-2.26 1.19-3.35.8-1.8 1.95-3.42 3.45-4.75.92-.81 2.02-1.37 3.18-1.62l.12.01zM11.97 4.11c-.59.27-1.13.62-1.62 1.02-1.3 1.06-2.3 2.4-2.94 3.94-.65 1.54-.85 3.18-.51 4.81.32 1.55 1.11 2.96 2.3 4.02 1.18 1.06 2.75 1.57 4.32 1.53.05-1.54.01-3.08.01-4.63.01-1.28-.51-2.58-1.4-3.54-1.02-1.1-2.38-1.74-3.86-1.89.01-.02.01-.02.01-.02z"
-              />
-            </svg>
-            <span>Ver más en TikTok</span>
-          </a>
-        </div>
-      </section>
-
-      <!-- ============================================= -->
-      <!-- ============= SECCIÓN CONTACTO =============== -->
-      <!-- ============================================= -->
-      <section id="contacto" class="py-20 bg-rose-100/50">
-        <div class="container mx-auto px-6 text-center">
-          <h2 class="text-4xl font-bold text-rose-900">
-            ¿Lista para tu cambio?
-          </h2>
-          <p class="text-gray-600 mt-4 mb-8 max-w-2xl mx-auto">
-            Tu próxima cita está a un solo mensaje de distancia. Contáctanos
-            para agendar y resolver cualquier duda que tengas.
-          </p>
-          <div
-            class="flex flex-col sm:flex-row justify-center items-center gap-4"
-          >
-            <a
-              href="https://wa.me/5215567431006?text=Hola!%20Me%20gustaría%20agendar%20una%20cita."
-              target="_blank"
-              class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-transform transform hover:scale-105 w-full sm:w-auto inline-flex items-center justify-center gap-2"
-            >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.586-1.459L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.398 1.905 6.088l-1.155 4.223 4.33-1.138z"
-                />
-              </svg>
-              <span>WhatsApp</span>
-            </a>
-            <a
-              href="https://www.facebook.com/people/Beauty-Center-By-Karen-Arellano/100071019893095/"
-              target="_blank"
-              class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg transition-transform transform hover:scale-105 w-full sm:w-auto inline-flex items-center justify-center gap-2"
-            >
-              <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v7.032C18.343 21.128 22 16.991 22 12z"
-                />
-              </svg>
-              <span>Facebook</span>
-            </a>
-          </div>
-        </div>
-      </section>
+        <!-- ============================================= -->
+        <!-- ============= SECCIÓN CONTACTO =============== -->
+        <!-- ============================================= -->
+        <section id="contacto" class="py-24 bg-cream-100">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="section-title">¿Lista para tu cambio?</h2>
+                 <p class="section-subtitle">Tu próxima cita está a un solo mensaje de distancia. Contáctanos para agendar y resolver tus dudas.</p>
+                 <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-10">
+                    <a href="https://wa.me/5215567431006?text=Hola!%20Me%20gustaría%20agendar%20una%20cita." target="_blank" class="btn btn-whatsapp">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.586-1.459L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.398 1.905 6.088l-1.155 4.223 4.33-1.138z"/></svg>
+                        <span>Contactar por WhatsApp</span>
+                    </a>
+                     <a href="https://www.facebook.com/people/Beauty-Center-By-Karen-Arellano/100071019893095/" target="_blank" class="btn btn-facebook">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v7.032C18.343 21.128 22 16.991 22 12z"/></svg>
+                        <span>Síguenos en Facebook</span>
+                    </a>
+                 </div>
+            </div>
+        </section>
     </main>
 
     <!-- ============================================= -->
     <!-- ================= FOOTER ==================== -->
     <!-- ============================================= -->
-    <footer class="bg-rose-900 text-white py-6">
-      <div class="container mx-auto px-6 text-center">
-        <p>
-          &copy; 2025 Beauty Center By Karen Arellano. Todos los derechos
-          reservados.
-        </p>
-      </div>
+    <footer class="bg-charcoal text-cream-200 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="font-bold text-lg mb-2">Beauty Center By Karen Arellano</p>
+            <p>&copy; 2025. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <!-- Archivo de JavaScript -->
-    <script src="scripts/script.js"></script>
-  </body>
+    <script src="script.js"></script>
+
+</body>
 </html>
+
